@@ -1,0 +1,89 @@
+name: Test Portfolio App
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Validate static portfolio
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        run: |
+          test -f index.html
+
+      - name: Validate inline JavaScript syntax
+        run: |
+          node <<'NODE'
+          const fs = require("fs");
+          const html = fs.readFileSync("index.html", "utf8");
+          const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/gi)];
+
+          if (scripts.length === 0) {
+            throw new Error("No inline <script> block found.");
+          }
+
+          for (const [index, match] of scripts.entries()) {
+            try {
+              new Function(match[1]);
+            } catch (error) {
+              throw new Error(`Inline script block ${index + 1} has invalid syntax: ${error.message}`);
+            }
+          }
+
+          console.log(`Validated ${scripts.length} inline script block(s).`);
+          NODE
+
+      - name: Validate portfolio structure
+        run: |
+          node <<'NODE'
+          const fs = require("fs");
+          const html = fs.readFileSync("index.html", "utf8");
+          const required = [
+            "<style>",
+            "<script>",
+            'id="hero"',
+            'id="about"',
+            'id="skills"',
+            'id="projects"',
+            'id="experience"',
+            'id="contact"',
+            "formsubmit.co",
+            "localStorage",
+            "{{NAME}}",
+            "{{ROLE}}",
+            "{{EMAIL}}",
+            "{{GITHUB}}",
+            "{{LINKEDIN}}"
+          ];
+
+          const missing = required.filter((item) => !html.includes(item));
+          if (missing.length) {
+            throw new Error(`Missing expected content: ${missing.join(", ")}`);
+          }
+
+          const externalLinks = [...html.matchAll(/<(?:link|script)[^>]+(?:href|src)=["']([^"']+)["']/gi)]
+            .map((match) => match[1])
+            .filter((url) => /^https?:\/\//i.test(url));
+
+          const disallowed = externalLinks.filter((url) => !url.startsWith("https://fonts.googleapis.com") && !url.startsWith("https://fonts.gstatic.com"));
+          if (disallowed.length) {
+            throw new Error(`Disallowed external asset(s): ${disallowed.join(", ")}`);
+          }
+
+          console.log("Portfolio structure and external asset rules passed.");
+          NODE
