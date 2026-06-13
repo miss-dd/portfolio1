@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{NAME}} portfolio - {{ROLE}}">
+  <title>Doreen Appiah Dompreh | Cloud Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--bg:#f7f8fb;--surface:#fff;--surface-2:#eef2f7;--text:#121826;--muted:#5d6678;--line:#dbe2ec;--brand:#2563eb;--brand-2:#0f766e;--accent:#f59e0b;--shadow:0 20px 55px rgba(18,24,38,.12);--radius:8px}
+    [data-theme=dark]{color-scheme:dark;--bg:#0e1117;--surface:#151a23;--surface-2:#202736;--text:#f5f7fb;--muted:#a8b1c3;--line:#2e3748;--brand:#60a5fa;--brand-2:#2dd4bf;--accent:#fbbf24;--shadow:0 20px 55px rgba(0,0,0,.36)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}body.no-scroll{overflow:hidden}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button{cursor:pointer}.container{width:min(1120px,calc(100% - 32px));margin-inline:auto}.grid{display:grid}.flex{display:flex}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-2{gap:8px}.gap-3{gap:12px}.text-muted{color:var(--muted)}.surface{background:var(--surface)}.rounded{border-radius:var(--radius)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-link{position:absolute;left:16px;top:-48px;background:var(--text);color:var(--bg);padding:10px 14px;border-radius:var(--radius);z-index:20}.skip-link:focus{top:16px}.site-header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:800;letter-spacing:0}.nav-links{display:none;align-items:center;gap:4px}.nav-links a{padding:9px 11px;border-radius:var(--radius);font-size:.93rem;color:var(--muted);font-weight:600}.nav-links a.active,.nav-links a:hover{color:var(--text);background:var(--surface-2)}.actions{display:flex;align-items:center;gap:8px}.icon-btn{width:42px;height:42px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--text);display:grid;place-items:center;box-shadow:0 8px 18px rgba(18,24,38,.06)}.icon-btn:focus-visible,.btn:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid color-mix(in srgb,var(--brand) 45%,transparent);outline-offset:3px}.menu-toggle{display:grid}.mobile-menu{display:none;border-top:1px solid var(--line);padding:10px 0 16px}.mobile-menu.open{display:grid}.mobile-menu a{padding:11px 0;color:var(--muted);font-weight:700}.mobile-menu a.active{color:var(--brand)}.section{padding:78px 0}.hero{min-height:calc(100vh - 68px);display:grid;align-items:center;padding:56px 0}.hero-grid{display:grid;gap:34px}.eyebrow{color:var(--brand-2);font-size:.83rem;text-transform:uppercase;letter-spacing:.14em;font-weight:800;margin:0 0 12px}.hero h1,.section-title{line-height:1.08;letter-spacing:0}.hero h1{font-size:clamp(2.6rem,10vw,5.9rem);margin:0 0 14px}.hero h1 span{color:var(--brand)}.lead{font-size:clamp(1.05rem,2vw,1.28rem);color:var(--muted);max-width:650px;margin:0 0 24px}.hero-actions,.socials{display:flex;flex-wrap:wrap;gap:12px}.btn{border:1px solid transparent;border-radius:var(--radius);padding:11px 16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:800;min-height:46px}.btn-primary{background:var(--brand);color:#fff}.btn-secondary{background:var(--surface);border-color:var(--line);color:var(--text)}.socials{margin-top:22px}.socials a{color:var(--muted);font-weight:700}.socials a:hover{color:var(--brand)}.photo-card{position:relative;aspect-ratio:1/1;border-radius:22px;background:linear-gradient(135deg,var(--surface-2),var(--surface));border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;display:grid;place-items:center}.photo-card img{width:100%;height:100%;object-fit:cover}.photo-placeholder{width:70%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;font-size:clamp(3rem,18vw,7rem);font-weight:800}.section-head{display:grid;gap:10px;margin-bottom:30px}.section-title{font-size:clamp(2rem,5vw,3.2rem);margin:0}.section-copy{color:var(--muted);max-width:720px;margin:0}.about-grid{display:grid;gap:22px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 14px 34px rgba(18,24,38,.06)}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat{background:var(--surface-2);border-radius:var(--radius);padding:16px}.stat strong{display:block;font-size:1.65rem;line-height:1;color:var(--brand)}.stat span{color:var(--muted);font-weight:600;font-size:.9rem}.skills-grid{display:grid;gap:16px}.skill{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px}.skill-top{display:flex;justify-content:space-between;gap:12px;font-weight:800}.bar{height:10px;background:var(--surface-2);border-radius:999px;overflow:hidden;margin-top:12px}.bar span{display:block;height:100%;width:var(--value);background:linear-gradient(90deg,var(--brand),var(--brand-2));border-radius:inherit}.projects-grid{display:grid;gap:18px}.project-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 14px 34px rgba(18,24,38,.06);display:grid}.project-card img,.project-fallback{width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--surface-2)}.project-fallback{display:grid;place-items:center;color:var(--muted);font-weight:800}.project-body{padding:18px}.project-body h3{margin:0 0 8px;font-size:1.16rem}.project-body p{margin:0 0 16px;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}.tag{font-size:.78rem;font-weight:800;color:var(--brand-2);background:color-mix(in srgb,var(--brand-2) 12%,transparent);padding:4px 8px;border-radius:999px}.timeline{position:relative;display:grid;gap:18px}.timeline:before{content:"";position:absolute;left:10px;top:4px;bottom:4px;width:2px;background:var(--line)}.time-item{position:relative;padding-left:36px}.time-item:before{content:"";position:absolute;left:3px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--brand);border:3px solid var(--bg)}.time-item h3{margin:0}.time-item time{color:var(--brand-2);font-weight:800;font-size:.9rem}.time-item p{margin:6px 0 0;color:var(--muted)}.contact-grid{display:grid;gap:22px}.contact-list{display:grid;gap:12px;color:var(--muted)}.contact-list a{color:var(--brand);font-weight:800}.form{display:grid;gap:14px}.field{display:grid;gap:7px}.field label{font-weight:800}.field input,.field textarea{width:100%;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:var(--radius);padding:12px 13px}.field textarea{min-height:140px;resize:vertical}.error{display:none;color:#dc2626;font-weight:700;font-size:.88rem}.field.invalid .error{display:block}.field.invalid input,.field.invalid textarea{border-color:#dc2626}.form-note{margin:0;color:var(--muted);font-size:.9rem}.site-footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted)}.footer-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}.modal{position:fixed;inset:0;display:none;z-index:30}.modal.open{display:block}.modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.62)}.modal-dialog{position:relative;width:min(680px,calc(100% - 28px));max-height:calc(100vh - 40px);overflow:auto;margin:20px auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.modal-media{aspect-ratio:16/8;object-fit:cover;width:100%;background:var(--surface-2)}.modal-content{padding:22px}.modal-content h3{font-size:1.55rem;margin:0 46px 10px 0}.modal-content p{color:var(--muted);margin:0 0 16px}.modal-close{position:absolute;right:12px;top:12px}.modal-links{display:flex;flex-wrap:wrap;gap:10px}.status{min-height:22px;font-weight:800}.status.ok{color:var(--brand-2)}.status.bad{color:#dc2626}@media (min-width:720px){.nav-links{display:flex}.menu-toggle{display:none}.mobile-menu{display:none!important}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1.08fr .92fr;align-items:center}.skills-grid{grid-template-columns:repeat(2,1fr)}.projects-grid{grid-template-columns:repeat(2,1fr)}.section{padding:96px 0}.modal-dialog{margin:48px auto}}@media (min-width:980px){.projects-grid{grid-template-columns:repeat(3,1fr)}.skills-grid{grid-template-columns:repeat(3,1fr)}}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav" aria-label="Primary navigation">
+      <a class="brand" href="#hero">Doreen Appiah Dompreh</a>
+      <nav class="nav-links" aria-label="Desktop navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">☾</button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <nav class="container mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Cloud Engineer</p>
+          <h1>Hi, I am <span>Doreen Appiah Dompreh</span>.</h1>
+          <p class="lead">I build thoughtful digital experiences that balance clean design, fast performance, and accessible interactions.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          </div>
+          <div class="socials" aria-label="Social links">
+            <a href="https://github.com/miss-dd" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/dompreh-doreen/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:domprehdoreenappiah@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="photo-card" aria-label="Doreen Appiah Dompreh photo placeholder">
+          <img src="https://drive.google.com/uc?export=view&id=1Uq-5zn7mHAuTBX1gSK4s8tZ7YCLF3ljY" alt="Doreen Appiah Dompreh portrait" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.hidden=false;">
+          <div class="photo-placeholder" hidden aria-hidden="true">DA</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 class="section-title">Focused on useful, polished work.</h2>
+          <p class="section-copy">{{ABOUT_TEXT}} I enjoy turning open-ended problems into products that feel clear, reliable, and easy to use.</p>
+        </div>
+        <div class="panel stats" aria-label="Portfolio highlights">
+          <div class="stat"><strong>{{YEARS_EXPERIENCE}}</strong><span>Years experience</span></div>
+          <div class="stat"><strong>{{PROJECT_COUNT}}</strong><span>Projects shipped</span></div>
+          <div class="stat"><strong>{{CLIENT_COUNT}}</strong><span>Happy clients</span></div>
+          <div class="stat"><strong>{{AWARD_COUNT}}</strong><span>Awards earned</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section-title">Tools I use to ship.</h2>
+          <p class="section-copy">Edit the labels and percentages to match your stack.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill"><div class="skill-top"><span>{{SKILL_1}}</span><span>95%</span></div><div class="bar" aria-label="{{SKILL_1}} proficiency 95%"><span style="--value:95%"></span></div></article>
+          <article class="skill"><div class="skill-top"><span>{{SKILL_2}}</span><span>90%</span></div><div class="bar" aria-label="{{SKILL_2}} proficiency 90%"><span style="--value:90%"></span></div></article>
+          <article class="skill"><div class="skill-top"><span>{{SKILL_3}}</span><span>85%</span></div><div class="bar" aria-label="{{SKILL_3}} proficiency 85%"><span style="--value:85%"></span></div></article>
+          <article class="skill"><div class="skill-top"><span>{{SKILL_4}}</span><span>80%</span></div><div class="bar" aria-label="{{SKILL_4}} proficiency 80%"><span style="--value:80%"></span></div></article>
+          <article class="skill"><div class="skill-top"><span>{{SKILL_5}}</span><span>75%</span></div><div class="bar" aria-label="{{SKILL_5}} proficiency 75%"><span style="--value:75%"></span></div></article>
+          <article class="skill"><div class="skill-top"><span>{{SKILL_6}}</span><span>70%</span></div><div class="bar" aria-label="{{SKILL_6}} proficiency 70%"><span style="--value:70%"></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2 class="section-title">Selected work.</h2>
+          <p class="section-copy">Six editable project cards with accessible modal details.</p>
+        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Experience</p>
+          <h2 class="section-title">Where I have made an impact.</h2>
+        </div>
+        <div class="timeline">
+          <article class="time-item">
+            <time>{{EXP_1_DATES}}</time>
+            <h3>{{EXP_1_ROLE}} · {{EXP_1_COMPANY}}</h3>
+            <p>{{EXP_1_DESCRIPTION}}</p>
+          </article>
+          <article class="time-item">
+            <time>{{EXP_2_DATES}}</time>
+            <h3>{{EXP_2_ROLE}} · {{EXP_2_COMPANY}}</h3>
+            <p>{{EXP_2_DESCRIPTION}}</p>
+          </article>
+          <article class="time-item">
+            <time>{{EXP_3_DATES}}</time>
+            <h3>{{EXP_3_ROLE}} · {{EXP_3_COMPANY}}</h3>
+            <p>{{EXP_3_DESCRIPTION}}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Let us build something useful.</h2>
+          <p class="section-copy">This form posts to FormSubmit.co. Replace {{EMAIL}} with your real email before publishing.</p>
+          <div class="contact-list">
+            <span>Email: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></span>
+            <span>GitHub: <a href="{{GITHUB}}" target="_blank" rel="noopener">{{GITHUB}}</a></span>
+            <span>LinkedIn: <a href="{{LINKEDIN}}" target="_blank" rel="noopener">{{LINKEDIN}}</a></span>
+          </div>
+        </div>
+        <form class="panel form" id="contactForm" action="https://formsubmit.co/{{EMAIL}}" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New portfolio message for {{NAME}}">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required>
+            <span class="error">Please enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <span class="error">Please enter a valid email.</span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <span class="error">Please write a short message.</span>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p class="form-note">Your message opens through FormSubmit after validation.</p>
+          <p class="status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> {{NAME}}. All rights reserved.</span>
+      <a href="#hero">Back to top</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-dialog">
+      <button class="icon-btn modal-close" type="button" aria-label="Close project details" data-close-modal>×</button>
+      <img class="modal-media" id="modalImage" alt="" loading="lazy">
+      <div class="modal-content">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <div class="tags" id="modalTags"></div>
+        <div class="modal-links">
+          <a class="btn btn-primary" id="modalLive" href="#" target="_blank" rel="noopener">Live Demo</a>
+          <a class="btn btn-secondary" id="modalSource" href="#" target="_blank" rel="noopener">Source Code</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <script>
+    const projects=[
+      {title:"{{PROJECT_1_TITLE}}",image:"{{PROJECT_1_IMAGE}}",summary:"{{PROJECT_1_SUMMARY}}",details:"{{PROJECT_1_DETAILS}}",tags:["{{PROJECT_1_TAG_1}}","{{PROJECT_1_TAG_2}}"],live:"{{PROJECT_1_LIVE_URL}}",source:"{{PROJECT_1_SOURCE_URL}}"},
+      {title:"{{PROJECT_2_TITLE}}",image:"{{PROJECT_2_IMAGE}}",summary:"{{PROJECT_2_SUMMARY}}",details:"{{PROJECT_2_DETAILS}}",tags:["{{PROJECT_2_TAG_1}}","{{PROJECT_2_TAG_2}}"],live:"{{PROJECT_2_LIVE_URL}}",source:"{{PROJECT_2_SOURCE_URL}}"},
+      {title:"{{PROJECT_3_TITLE}}",image:"{{PROJECT_3_IMAGE}}",summary:"{{PROJECT_3_SUMMARY}}",details:"{{PROJECT_3_DETAILS}}",tags:["{{PROJECT_3_TAG_1}}","{{PROJECT_3_TAG_2}}"],live:"{{PROJECT_3_LIVE_URL}}",source:"{{PROJECT_3_SOURCE_URL}}"},
+      {title:"{{PROJECT_4_TITLE}}",image:"{{PROJECT_4_IMAGE}}",summary:"{{PROJECT_4_SUMMARY}}",details:"{{PROJECT_4_DETAILS}}",tags:["{{PROJECT_4_TAG_1}}","{{PROJECT_4_TAG_2}}"],live:"{{PROJECT_4_LIVE_URL}}",source:"{{PROJECT_4_SOURCE_URL}}"},
+      {title:"{{PROJECT_5_TITLE}}",image:"{{PROJECT_5_IMAGE}}",summary:"{{PROJECT_5_SUMMARY}}",details:"{{PROJECT_5_DETAILS}}",tags:["{{PROJECT_5_TAG_1}}","{{PROJECT_5_TAG_2}}"],live:"{{PROJECT_5_LIVE_URL}}",source:"{{PROJECT_5_SOURCE_URL}}"},
+      {title:"{{PROJECT_6_TITLE}}",image:"{{PROJECT_6_IMAGE}}",summary:"{{PROJECT_6_SUMMARY}}",details:"{{PROJECT_6_DETAILS}}",tags:["{{PROJECT_6_TAG_1}}","{{PROJECT_6_TAG_2}}"],live:"{{PROJECT_6_LIVE_URL}}",source:"{{PROJECT_6_SOURCE_URL}}"}
+    ];
+    const $=(s,p=document)=>p.querySelector(s),$$=(s,p=document)=>[...p.querySelectorAll(s)],root=document.documentElement;
+    const savedTheme=localStorage.getItem("theme"),prefersDark=matchMedia("(prefers-color-scheme: dark)").matches;
+    function setTheme(t){root.dataset.theme=t;localStorage.setItem("theme",t);$("#themeToggle").textContent=t==="dark"?"☀":"☾";$("#themeToggle").setAttribute("aria-pressed",t==="dark")}
+    setTheme(savedTheme||(prefersDark?"dark":"light"));
+    $("#themeToggle").addEventListener("click",()=>setTheme(root.dataset.theme==="dark"?"light":"dark"));
+    $("#menuToggle").addEventListener("click",()=>{const m=$("#mobileMenu"),open=m.classList.toggle("open");$("#menuToggle").setAttribute("aria-expanded",open);$("#menuToggle").textContent=open?"×":"☰"});
+    $$("#mobileMenu a").forEach(a=>a.addEventListener("click",()=>{$("#mobileMenu").classList.remove("open");$("#menuToggle").setAttribute("aria-expanded","false");$("#menuToggle").textContent="☰"}));
+    $("#year").textContent=new Date().getFullYear();
+    const grid=$("#projectsGrid"),modal=$("#projectModal"),lastFocus={el:null};
+    function imgFallback(img,label="Project image"){img.outerHTML=`<div class="${img.className||"project-fallback"}">${label}</div>`}
+    projects.forEach((p,i)=>{const card=document.createElement("article");card.className="project-card";card.innerHTML=`<img src="${p.image}" alt="${p.title} preview" loading="lazy"><div class="project-body"><h3>${p.title}</h3><p>${p.summary}</p><div class="tags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div><button class="btn btn-secondary" type="button" data-project="${i}">View Details</button></div>`;card.querySelector("img").addEventListener("error",e=>imgFallback(e.currentTarget));grid.append(card)});
+    function openModal(i){const p=projects[i],media=$(".modal-dialog").firstElementChild.nextElementSibling;lastFocus.el=document.activeElement;if(!$("#modalImage"))media.outerHTML='<img class="modal-media" id="modalImage" alt="" loading="lazy">';$("#modalTitle").textContent=p.title;$("#modalDescription").textContent=p.details;$("#modalImage").src=p.image;$("#modalImage").alt=`${p.title} preview`;$("#modalImage").onerror=()=>imgFallback($("#modalImage"));$("#modalTags").innerHTML=p.tags.map(t=>`<span class="tag">${t}</span>`).join("");$("#modalLive").href=p.live;$("#modalSource").href=p.source;modal.classList.add("open");modal.setAttribute("aria-hidden","false");document.body.classList.add("no-scroll");$(".modal-close").focus()}
+    function closeModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true");document.body.classList.remove("no-scroll");if(lastFocus.el)lastFocus.el.focus()}
+    grid.addEventListener("click",e=>{const b=e.target.closest("[data-project]");if(b)openModal(b.dataset.project)});
+    $$("[data-close-modal]").forEach(el=>el.addEventListener("click",closeModal));
+    document.addEventListener("keydown",e=>{if(e.key==="Escape"&&modal.classList.contains("open"))closeModal()});
+    const form=$("#contactForm"),status=$("#formStatus");
+    form.addEventListener("submit",e=>{let ok=true;$$(".field",form).forEach(f=>{const input=$("input,textarea",f),valid=input.checkValidity()&&input.value.trim().length>0;f.classList.toggle("invalid",!valid);ok=ok&&valid});status.className="status";if(!ok){e.preventDefault();status.textContent="Please fix the highlighted fields.";status.classList.add("bad")}else{status.textContent="Sending through FormSubmit...";status.classList.add("ok")}});
+    $$("input,textarea",form).forEach(input=>input.addEventListener("input",()=>input.closest(".field").classList.remove("invalid")));
+    const navLinks=$$(".nav-links a,.mobile-menu a"),sections=navLinks.map(a=>$(a.getAttribute("href"))).filter(Boolean);
+    const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){navLinks.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+entry.target.id))}})},{rootMargin:"-40% 0px -55% 0px",threshold:0});
+    sections.forEach(s=>observer.observe(s));
+  </script>
+</body>
+</html>
